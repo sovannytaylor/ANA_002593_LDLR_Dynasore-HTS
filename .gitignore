@@ -1,0 +1,15 @@
+# log files
+*.log
+
+# annoying microsoft office temp files
+*~$*
+
+# vscode files
+*.vscode
+
+# cache files
+*pyc
+
+# input output folders
+raw_data/
+python_results/
