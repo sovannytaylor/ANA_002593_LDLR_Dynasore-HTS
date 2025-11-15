@@ -8,7 +8,7 @@ Use FlowJo to gate all cell populations that you plan to analyze.
 ---
 
 #### **2. Add experimental metadata using the Plate Editor**
-Use the Plate Editor to assign me
+Use the Plate Editor to assign metadata as can be seen below and export that csv as "EXPERIMENTID_map". csv
 ![Plate Editor Example](https://github.com/sovannytaylor/ANA_002593_LDLR_Dynasore-HTS/blob/main/image%20(10).png)
 
 ---
@@ -61,7 +61,8 @@ Edit the script to match your experiment:
 
 - input/output paths  
 - metadata keys (peptide, treatment, media, rep, etc.)  
-- fluorescence channel names  
+- fluorescence channel names
+- make sure the header is line 143, if your column is on a different line then need to hard code that change 
 
 ---
 
@@ -75,6 +76,5 @@ After generating `merged_df.csv`, use `importing_excel.py` to:
 
 ---
 
-tadata (peptide, treatment, media, etc.) to each well.  
-Export this plate map as:
+
 
