@@ -4,7 +4,7 @@ Use plate editor tool to add metadata of the experimental conditions to wells an
 image.png
 3. Export all of the gated populations in flowjo by "CTRL+A", "right-click", and click export 
 
-image.png
+![Example Panel](https://github.com/sovannytaylor/ANA_002593_LDLR_Dynasore-HTS/blob/main/image%20(10).png)
 4. Once exported csvs into a folder, go through and delete the gates that you dont want (cause couldnt figure out how to easily click the ones without going through manually)
 
 Python
