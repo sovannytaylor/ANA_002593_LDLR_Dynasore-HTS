@@ -1,10 +1,11 @@
 FlowJo 
 Use flowjo to gate the cell populations desired 
 Use plate editor tool to add metadata of the experimental conditions to wells and export that csv as "EXPERIMENTID_map". csv 
-image.png
-3. Export all of the gated populations in flowjo by "CTRL+A", "right-click", and click export 
-
 ![Example Panel](https://github.com/sovannytaylor/ANA_002593_LDLR_Dynasore-HTS/blob/main/image%20(10).png)
+3. Export all of the gated populations in flowjo by "CTRL+A", "right-click", and click export 
+![Example Panel](https://github.com/sovannytaylor/ANA_002593_LDLR_Dynasore-HTS/blob/main/image%20(11).png)
+
+
 4. Once exported csvs into a folder, go through and delete the gates that you dont want (cause couldnt figure out how to easily click the ones without going through manually)
 
 Python
@@ -12,7 +13,7 @@ Python
 this is only really necessary if you want to preserve the single cell data quants on a plot or want to show histograms for each well 
 if you need to quantify measurements not on flowjo, for example getting the mean of the top 25% YG582-A intensities per well 
 Things you CAN plot or export stats on flowjo:
-image.png
+![Example Panel](https://github.com/sovannytaylor/ANA_002593_LDLR_Dynasore-HTS/blob/main/image%20(12).png)
 6. Things to configure on the script: 
 paths 
 metadata (conditions, peptide, treatment, rep, etc) 
