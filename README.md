@@ -62,7 +62,7 @@ Edit the script to match your experiment:
 - input/output paths  
 - metadata keys (peptide, treatment, media, rep, etc.)  
 - fluorescence channel names
-- make sure the header is line 143, if your column is on a different line then need to hard code that change 
+- make sure the header is line 0, if your column is on a different line then need to hard code that change (was 142 for some reason once when I exported)
 
 ---
 
