@@ -194,7 +194,7 @@ def plot_peptide_group(plot_df_normal, peptides, fig_title):
 
     sns.set(style="whitegrid")
 
-    peptide_order = peptides              # keep your chosen order
+    peptide_order = peptides
     treatment_order = sorted(sub_df["TREATMENT"].unique())
 
     for i, metric in enumerate(metrics):
@@ -232,8 +232,15 @@ def plot_peptide_group(plot_df_normal, peptides, fig_title):
 
     fig.suptitle(fig_title, y=1.02, fontsize=14)
     fig.tight_layout()
-    plt.show()
 
+    # ----------------------------
+    # SAVE FIGURE TO PLOT FOLDER
+    # ----------------------------
+    save_path = PLOT_FOLDER / f"{fig_title.replace(' ', '_')}.png"
+    fig.savefig(save_path, dpi=300, bbox_inches="tight")
+    logger.info(f"Saved figure: {save_path}")
+
+    
 # Figure 1: CROT + LDL
 plot_peptide_group(plot_df_normal, group1, "CROT + LDL")
 
